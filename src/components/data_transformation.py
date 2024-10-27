@@ -93,7 +93,7 @@ class DataTransformation:
             logging.info(
                 f"Applying preprocessing object on training dataframe and testing dataframe"
             )
-
+#TOOD what is differecence between fir_transform and transform()
             input_feature_train_arr = preprocessing_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr = preprocessing_obj.fit_transform(input_feature_test_df)
 #TODO learn what np.c_ does
