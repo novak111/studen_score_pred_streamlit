@@ -1,1 +1,1 @@
-## End to End Mashine Learning Project
+## Student score prediction deployed via streamlit
