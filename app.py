@@ -1,7 +1,7 @@
 import streamlit as st
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
-st.title("ML Project Prediction App")
+st.title("Students Math Score Prediction")
 
 # Collect user input
 gender = st.selectbox("Gender", ["male", "female"])
