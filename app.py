@@ -28,3 +28,6 @@ if st.button("Predict"):
     results = predict_pipeline.predict(pred_df)
 
     st.write(f"Predicted Math Score: {results[0]}")
+
+# TODO add percentile to results and a plot showing reding, writing and predicted math scores
+# TODO add plots of distribution of predictors and selected values and categories
