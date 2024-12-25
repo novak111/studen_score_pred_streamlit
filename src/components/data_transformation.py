@@ -48,7 +48,7 @@ class DataTransformation:
                 steps=[
                     ("imputer", SimpleImputer(strategy="most_frequent")),
                     ("one_hot_encoder", OneHotEncoder()),
-#TODO: check why is there with_mean = false
+
                     ("scaler", StandardScaler(with_mean=False))
                 ]
             )
@@ -96,7 +96,7 @@ class DataTransformation:
 #TOOD what is differecence between fir_transform and transform()
             input_feature_train_arr = preprocessing_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr = preprocessing_obj.fit_transform(input_feature_test_df)
-#TODO learn what np.c_ does
+
             train_arr = np.c_[input_feature_train_arr, np.array(traget_feature_train_df)]
             test_arr = np.c_[input_feature_test_arr, np.array(traget_feature_test_df)]
 
